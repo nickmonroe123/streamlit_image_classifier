@@ -31,7 +31,7 @@ def main():
     st.sidebar.title("Navigation")
     selection = st.sidebar.radio("Go to", ['Model Training', 'Image Prediction'])
 
-    if selection == 'Model Training':s
+    if selection == 'Model Training':
         # Get list of directories in 'datasets/food-101/images'
         image_dirs = [d.replace('_', ' ').title() for d in os.listdir('datasets/food-101/images') if os.path.isdir(os.path.join('datasets/food-101/images', d))]
         # Get user input for directories to train on
